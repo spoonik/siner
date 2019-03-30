@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wKeys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="TouchableView" customModule="wKeys" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboard" translatesAutoresizingMaskIntoConstraints="NO" id="07H-Di-n0w">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="iBe-CY-Iqo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-mA-zAu">
+                                <rect key="frame" x="142" y="20" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdB-Xe-FMH">
+                                <rect key="frame" x="607" y="336" width="51" height="31"/>
+                                <connections>
+                                    <action selector="pushUseMIDI:" destination="8bC-Xf-vdC" eventType="valueChanged" id="qGN-80-hW1"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaL-UW-8Jt">
+                                <rect key="frame" x="629" y="0.0" width="32" height="30"/>
+                                <state key="normal" title="Help"/>
+                                <connections>
+                                    <action selector="pushChartButton:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="EBm-cu-jF4"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Help" translatesAutoresizingMaskIntoConstraints="NO" id="hyw-1S-DlV">
+                                <rect key="frame" x="26" y="20" width="615" height="335"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ncl-mA-zAu" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="20" id="63R-qS-Qpf"/>
+                            <constraint firstItem="hyw-1S-DlV" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="20" id="CYP-NR-ZNf"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="hyw-1S-DlV" secondAttribute="bottom" constant="20" id="ENl-IK-390"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="JaL-UW-8Jt" secondAttribute="trailing" constant="6" id="Kja-V0-Y9B"/>
+                            <constraint firstItem="Ncl-mA-zAu" firstAttribute="leading" secondItem="07H-Di-n0w" secondAttribute="trailing" constant="17" id="TiW-SK-9XJ"/>
+                            <constraint firstItem="07H-Di-n0w" firstAttribute="bottom" secondItem="Uee-0j-aNJ" secondAttribute="bottom" id="Z6z-0K-vqA"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="hyw-1S-DlV" secondAttribute="trailing" constant="26" id="Zp1-ax-Kjd"/>
+                            <constraint firstItem="hyw-1S-DlV" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="26" id="azt-fe-7Vw"/>
+                            <constraint firstItem="07H-Di-n0w" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="eNB-s2-TZi"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="fdB-Xe-FMH" secondAttribute="bottom" constant="8" id="fFj-Le-CLQ"/>
+                            <constraint firstItem="07H-Di-n0w" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" id="jS8-AL-doY"/>
+                            <constraint firstItem="JaL-UW-8Jt" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" id="n0x-Mj-DtT"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="fdB-Xe-FMH" secondAttribute="trailing" constant="11" id="rqD-26-do0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                        <connections>
+                            <outlet property="chartImageView" destination="hyw-1S-DlV" id="ZSM-IL-tZm"/>
+                            <outlet property="chordLabel" destination="Ncl-mA-zAu" id="Swe-CI-wjD"/>
+                            <outlet property="keyboardView" destination="07H-Di-n0w" id="U9C-kc-0TS"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.28185907046478" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Help" width="1048" height="634"/>
+        <image name="keyboard" width="449" height="1079"/>
+    </resources>
+</document>
