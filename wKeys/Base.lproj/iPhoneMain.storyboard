@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="wKeys" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="TouchableView" customModule="wKeys" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView multipleTouchEnabled="YES" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="w66-Rh-fLm">
+                                <rect key="frame" x="44" y="0.0" width="708" height="354"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fyS-l6-aTl">
+                                        <rect key="frame" x="0.0" y="0.0" width="708" height="37"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZL9-4p-s0X">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="37"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" text="siner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOE-cu-ze5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="37"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                            <bool key="isElement" value="NO"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="31"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncl-mA-zAu">
+                                                        <rect key="frame" x="178.66666666666663" y="0.0" width="174.33333333333337" height="37"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                            <bool key="isElement" value="NO"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="751" distribution="equalSpacing" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="O0j-fP-GcD">
+                                                <rect key="frame" x="355" y="0.0" width="353" height="37"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQr-XN-aQg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="37"/>
+                                                        <state key="normal" title="Set Scale Root"/>
+                                                        <connections>
+                                                            <action selector="pushSetScaleRootKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1D-e8-nyK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="258" verticalHuggingPriority="251" horizontalCompressionResistancePriority="756" verticalCompressionResistancePriority="754" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjB-tZ-MNa">
+                                                        <rect key="frame" x="102.66666666666669" y="0.0" width="0.0" height="37"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                            <bool key="isElement" value="NO"/>
+                                                        </accessibility>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCA-bt-ce8">
+                                                        <rect key="frame" x="326.33333333333337" y="0.0" width="26.666666666666686" height="37"/>
+                                                        <state key="normal" image="gear" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="pushSettingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mzA-sB-KEg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView multipleTouchEnabled="YES" contentMode="scaleAspectFit" verticalHuggingPriority="248" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="d4c-ok-M7K">
+                                        <rect key="frame" x="0.0" y="37" width="708" height="317"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="244" verticalHuggingPriority="240" horizontalCompressionResistancePriority="743" verticalCompressionResistancePriority="738" insetsLayoutMarginsFromSafeArea="NO" image="AlphabetKeyboard" translatesAutoresizingMaskIntoConstraints="NO" id="bPA-hd-uqh">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="317"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="254" verticalHuggingPriority="245" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="744" insetsLayoutMarginsFromSafeArea="NO" image="transparent" translatesAutoresizingMaskIntoConstraints="NO" id="ccl-qC-VB2">
+                                                <rect key="frame" x="218" y="0.0" width="490" height="317"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.08235294118" green="0.12549019610000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="w66-Rh-fLm" secondAttribute="trailing" id="i6h-5e-ydH"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="w66-Rh-fLm" secondAttribute="bottom" id="oxw-Ln-dgF"/>
+                            <constraint firstItem="w66-Rh-fLm" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" id="rLh-hf-ozG"/>
+                            <constraint firstItem="w66-Rh-fLm" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="zY4-5l-Fd7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ" propertyAccessControl="all"/>
+                        <connections>
+                            <outlet property="chordLabel" destination="Ncl-mA-zAu" id="Ktk-ZA-sXj"/>
+                            <outlet property="keyboardHigh" destination="bPA-hd-uqh" id="oZO-Xr-8RE"/>
+                            <outlet property="keyboardImageView" destination="bPA-hd-uqh" id="0A3-Hh-JZe"/>
+                            <outlet property="multiTouchArea" destination="ccl-qC-VB2" id="HXu-y4-COP"/>
+                            <outlet property="parentStackView" destination="w66-Rh-fLm" id="GPd-JK-Tqw"/>
+                            <outlet property="scaleRootLabel" destination="RjB-tZ-MNa" id="7bt-ZI-QCZ"/>
+                            <outlet property="setScaleRootButton" destination="nQr-XN-aQg" id="pwG-IN-jVH"/>
+                            <outlet property="touchableStackView" destination="d4c-ok-M7K" id="sA9-i0-HoH"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="touchableView" destination="8bC-Xf-vdC" id="NH0-r7-r7G"/>
+                        <segue destination="gKM-14-BvW" kind="popoverPresentation" identifier="toHelpView" popoverAnchorView="rCA-bt-ce8" id="nJz-vv-Fv1">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179" y="222"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="SSh-x7-QJS">
+            <objects>
+                <viewController id="gKM-14-BvW" customClass="HelpViewController" customModule="wKeys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="2" contentMode="scaleToFill" restorationIdentifier="help" id="aLk-Gx-Aiv">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ay-mj-okW" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="32" width="812" height="343"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoS-To-d8m">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="32"/>
+                                <items>
+                                    <navigationItem title="manual" id="iEJ-uO-78z">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="IkC-YE-8cA">
+                                            <connections>
+                                                <action selector="pushDone:" destination="gKM-14-BvW" id="4jp-D3-0ib"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VoS-To-d8m" firstAttribute="top" secondItem="Klx-bF-FB7" secondAttribute="top" id="3NL-4A-1am"/>
+                            <constraint firstItem="VoS-To-d8m" firstAttribute="leading" secondItem="aLk-Gx-Aiv" secondAttribute="leading" id="BOJ-RN-h2i"/>
+                            <constraint firstItem="4Ay-mj-okW" firstAttribute="leading" secondItem="aLk-Gx-Aiv" secondAttribute="leading" id="EY6-rM-9jn"/>
+                            <constraint firstItem="4Ay-mj-okW" firstAttribute="top" secondItem="VoS-To-d8m" secondAttribute="bottom" id="Fs0-bl-LYV"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ay-mj-okW" secondAttribute="trailing" id="YpS-z2-wlF"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ay-mj-okW" secondAttribute="bottom" id="i0X-Gr-SCA"/>
+                            <constraint firstItem="VoS-To-d8m" firstAttribute="top" secondItem="Klx-bF-FB7" secondAttribute="top" id="pAc-f2-8Kc"/>
+                            <constraint firstAttribute="trailing" secondItem="VoS-To-d8m" secondAttribute="trailing" id="pfv-kz-5B3"/>
+                            <constraint firstItem="4Ay-mj-okW" firstAttribute="top" secondItem="VoS-To-d8m" secondAttribute="bottom" id="w8q-ds-p8F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Klx-bF-FB7"/>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="4Ay-mj-okW" id="bT0-bR-Lzc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4q-ss-kxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178.79464285714286" y="1102.8985507246377"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlphabetKeyboard" width="449" height="1079"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="transparent" width="1010" height="809"/>
+    </resources>
+</document>
